@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <title>Dashboard</title>
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+</head>
+
+<body>
+
+  <div class="content">
+
+
+    <div class="data-info">
+      <div class="box">
+        <i class="fas fa-user"></i>
+        <div class="data">
+          <p>user</p>
+          <span>100</span>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-pen"></i>
+        <div class="data">
+          <p>posts</p>
+          <span>200</span>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-table"></i>
+        <div class="data">
+          <p>product</p>
+          <span>300</span>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-dollar"></i>
+        <div class="data">
+          <p>revenue</p>
+          <span>400</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="title-info" id="addNewProduct">
+      <p>
+        إضافة منتج جديد
+      </p>
+
+    </div>
+    <div class="alert">
+      <span class="closeAlert">X</span>
+      <p class="text">من فضلك أدخل البيانات بشكل صحيح</p>
+      <button class="ok">موافق</button>
+    </div>
+
+    <div class="successDone">
+      <p class="text">تم إضافة المنتج بنجاح</p>
+      <button class="done">موافق</button>
+    </div>
+
+    <div class="computer" dir="rtl">
+
+      <h2>إضافة منتج جديد</h2>
+
+      <form>
+        <div class="parentProduct">
+          <label for="name"> اسم المنتج : </label>
+          <input type="text" id="name">
+        </div>
+        <div class="parentProduct">
+          <label for="price"> سعر المنتج : </label>
+          <input type="text" id="price">
+        </div>
+
+        <div class="parentProduct">
+          <label for="discount"> السعر القديم للمنتج </label>
+          <input type="text" id="discount">
+        </div>
+        <div class="parentProduct">
+          <label for="img"> صورة المنتج :</label>
+          <div class="d-flex justify-content-between align-items-center w-75">
+            <button class=" ms-2 fs-5 btn btn-primary p-1" id="selectImage"> اختر </button>
+            <input type="text" id="img" class="w-75">
+          </div>
+
+        </div>
+        <div class="parentProduct">
+          <label for="desc"> وصف المنتج : </label>
+          <input type="text" id="desc">
+        </div>
+
+        <div class="parentProduct">
+          <label class="minuSelection" for="type">نوع المنتج</label>
+          <select id="type">
+            <option value="كمبيوتر">كمبيوتر</option>
+            <option value="لابتوبات">لابتوبات</option>
+            <option value="أثاث منزلى">أثاث منزلى</option>
+            <option value="فساتين">فساتين</option>
+            <option value="ملابس أطفال">ملابس أطفال</option>
+            <option value="أجهزة كهربية">أجهزة كهربية</option>
+            <option value="بدل">بدل</option>
+            <option value="شاشات">شاشات</option>
+            <option value="موبايلات">موبايلات</option>
+            <option value="تابلت">تابلت</option>
+          </select>
+
+        </div>
+
+      </form>
+
+      <button class="addComp " id="addProduct">إضافة المنتج</button>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+  <div class="menu">
+    <ul>
+      <li class="profile">
+
+        <div class="tag-img">
+          <img src="images/1.jpg" alt="profile">
+        </div>
+        <h2> إدارة المنتجات</h2>
+      </li>
+      <li>
+        <a href="../base/index.html">
+          <i class="fas fa-home"></i>
+          <p>الصفحة الرئيسية</p>
+        </a>
+
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-user-group"></i>
+          <p>المستخدمين</p>
+        </a>
+
+      </li>
+      <li>
+        <a href="../base/products.html">
+          <i class="fas fa-table"></i>
+          <p>المنتجات</p>
+        </a>
+
+      </li>
+
+      <li>
+        <a href="#addNewProduct">
+          <i class="fas fa-pen"></i>
+          <p>إضافة منتج جديد</p>
+        </a>
+      </li>
+
+      <li class="log-out">
+        <a href="../index.html">
+          <i class="fas fa-sign-out"></i>
+          <p>تسجيل الخروج</p>
+        </a>
+
+      </li>
+
+    </ul>
+  </div>
+
+
+
+  <div id="containerImage">
+    <span id="close">X</span>
+    <h2>كمبيوترات</h2>
+    <div class="containerSelectionImages">
+      <div class="cardImage">
+        <img src="images/6.jpg" alt="">
+        <span>6</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/2.jpg" alt="">
+        <span>2</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/3.jpg" alt="">
+        <span>3</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/4.jpg" alt="">
+        <span>4</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/5.jpg" alt="">
+        <span>5</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/8.jpg" alt="">
+        <span>8</span>
+      </div>
+
+
+
+      <div class="cardImage">
+        <img src="images/7.jpg" alt="">
+        <span>7</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/9.jpg" alt="">
+        <span>9</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/10.jpg" alt="">
+        <span>10</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/11.jpg" alt="">
+        <span>11</span>
+      </div>
+
+
+    </div>
+
+    <h2> لابتوبات</h2>
+    <div class="containerSelectionImages">
+      <div class="cardImage">
+        <img src="images/12.jpg" alt="">
+        <span>12</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/13.jpg" alt="">
+        <span>13</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/14.jpg" alt="">
+        <span>14</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/15.jpg" alt="">
+        <span>15</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/16.jpg" alt="">
+        <span>16</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/17.jpg" alt="">
+        <span>17</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/18.jpg" alt="">
+        <span>18</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/19.jpg" alt="">
+        <span>19</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/20.jpg" alt="">
+        <span>20</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/21.jpg" alt="">
+        <span>21</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/22.jpg" alt="">
+        <span>22</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/23.jpg" alt="">
+        <span>23</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/24.jpg" alt="">
+        <span>24</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/25.jpg" alt="">
+        <span>25</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/26.jpg" alt="">
+        <span>26</span>
+      </div>
+      <div class="cardImage">
+        <img src="images/27.jpg" alt="">
+        <span>27</span>
+      </div>
+
+    </div>
+
+    <h2>موبايلات</h2>
+    <div class="containerSelectionImages">
+      <div class="cardImage">
+        <img src="images/28.jpg" alt="">
+        <span>28</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/29.jpg" alt="">
+        <span>29</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/30.jpg" alt="">
+        <span>30</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/31.jpg" alt="">
+        <span>31</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/32.jpg" alt="">
+        <span>32</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/33.jpg" alt="">
+        <span>33</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/34.jpg" alt="">
+        <span>34</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/35.jpg" alt="">
+        <span>35</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/36.jpg" alt="">
+        <span>36</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/37.jpg" alt="">
+        <span>37</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/38.jpg" alt="">
+        <span>38</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/39.jpg" alt="">
+        <span>39</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/40.jpg" alt="">
+        <span>40</span>
+      </div>
+    </div>
+
+    <h2>شاشات عرض </h2>
+    <div class="containerSelectionImages">
+      <div class="cardImage">
+        <img src="images/41.jpg" alt="">
+        <span>41</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/42.jpg" alt="">
+        <span>42</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/43.jpg" alt="">
+        <span>43</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/44.jpg" alt="">
+        <span>44</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/45.jpg" alt="">
+        <span>45</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/46.jpg" alt="">
+        <span>46</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/47.jpg" alt="">
+        <span>47</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/48.jpg" alt="">
+        <span>48</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/49.jpg" alt="">
+        <span>49</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/50.jpg" alt="">
+        <span>50</span>
+      </div>
+
+
+    </div>
+
+
+    <h2>تابلت</h2>
+    <div class="containerSelectionImages">
+      <div class="cardImage">
+        <img src="images/51.jpg" alt="">
+        <span>51</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/52.jpg" alt="">
+        <span>52</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/53.jpg" alt="">
+        <span>53</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/54.jpg" alt="">
+        <span>54</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/55.jpg" alt="">
+        <span>55</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/56.jpg" alt="">
+        <span>56</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/57.jpg" alt="">
+        <span>57</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/58.jpg" alt="">
+        <span>58</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/59.jpg" alt="">
+        <span>59</span>
+      </div>
+
+
+    </div>
+
+    <h2>أجهزة كهربية</h2>
+    <div class="containerSelectionImages">
+
+      <div class="cardImage">
+        <img src="images/60.jpg" alt="">
+        <span>60</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/61.jpg" alt="">
+        <span>61</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/62.jpg" alt="">
+        <span>62</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/63.jpg" alt="">
+        <span>63</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/64.jpg" alt="">
+        <span>64</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/65.jpg" alt="">
+        <span>65</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/66.jpg" alt="">
+        <span>66</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/67.jpg" alt="">
+        <span>67</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/68.jpg" alt="">
+        <span>68</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/69.jpg" alt="">
+        <span>69</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/70.jpg" alt="">
+        <span>70</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/71.jpg" alt="">
+        <span>71</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/72.jpg" alt="">
+        <span>72</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/73.jpg" alt="">
+        <span>73</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/74.jpg" alt="">
+        <span>74</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/75.jpg" alt="">
+        <span>75</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/76.jpg" alt="">
+        <span>76</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/77.jpg" alt="">
+        <span>77</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/78.jpg" alt="">
+        <span>78</span>
+      </div>
+
+    </div>
+
+    <h2> ملابس أطفال</h2>
+    <div class="containerSelectionImages">
+
+      <div class="cardImage">
+        <img src="images/79.jpg" alt="">
+        <span>79</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/80.jpg" alt="">
+        <span>80</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/81.jpg" alt="">
+        <span>81</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/82.jpg" alt="">
+        <span>82</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/83.jpg" alt="">
+        <span>83</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/84.jpg" alt="">
+        <span>84</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/85.jpg" alt="">
+        <span>85</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/86.jpg" alt="">
+        <span>86</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/87.jpg" alt="">
+        <span>87</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/88.jpg" alt="">
+        <span>88</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/89.jpg" alt="">
+        <span>89</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/90.jpg" alt="">
+        <span>90</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/91.jpg" alt="">
+        <span>91</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/92.jpg" alt="">
+        <span>92</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/93.jpg" alt="">
+        <span>93</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/94.jpg" alt="">
+        <span>94</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/95.jpg" alt="">
+        <span>95</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/96.jpg" alt="">
+        <span>96</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/97.jpg" alt="">
+        <span>97</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/98.jpg" alt="">
+        <span>98</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/99.jpg" alt="">
+        <span>99</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/100.jpg" alt="">
+        <span>100</span>
+      </div>
+
+
+      <div class="cardImage">
+        <img src="images/101.jpg" alt="">
+        <span>101</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/102.jpg" alt="">
+        <span>102</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/103.jpg" alt="">
+        <span>103</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/104.jpg" alt="">
+        <span>104</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/105.jpg" alt="">
+        <span>105</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/106.jpg" alt="">
+        <span>106</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/107.jpg" alt="">
+        <span>107</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/108.jpg" alt="">
+        <span>108</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/109.jpg" alt="">
+        <span>109</span>
+      </div>
+
+
+      <div class="cardImage">
+        <img src="images/110.jpg" alt="">
+        <span>110</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/111.jpg" alt="">
+        <span>111</span>
+      </div>
+    </div>
+
+    <h2> فساتين </h2>
+    <div class="containerSelectionImages">
+
+      <div class="cardImage">
+        <img src="images/112.jpg" alt="">
+        <span>112</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/113.jpg" alt="">
+        <span>113</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/114.jpg" alt="">
+        <span>114</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/115.jpg" alt="">
+        <span>115</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/116.jpg" alt="">
+        <span>116</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/117.jpg" alt="">
+        <span>117</span>
+      </div>
+
+
+      <div class="cardImage">
+        <img src="images/118.jpg" alt="">
+        <span>118</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/119.jpg" alt="">
+        <span>119</span>
+      </div>
+    </div>
+
+    <h2> بدل عرسان </h2>
+    <div class="containerSelectionImages">
+      <div class="cardImage">
+        <img src="images/120.jpg" alt="">
+        <span>120</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/121.jpg" alt="">
+        <span>121</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/122.jpg" alt="">
+        <span>122</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/123.jpg" alt="">
+        <span>123</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/124.jpg" alt="">
+        <span>124</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/125.jpg" alt="">
+        <span>125</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/126.jpg" alt="">
+        <span>126</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/127.jpg" alt="">
+        <span>127</span>
+      </div>
+
+
+      <div class="cardImage">
+        <img src="images/128.jpg" alt="">
+        <span>128</span>
+      </div>
+
+
+    </div>
+
+
+    <h2> أثاث منزلى</h2>
+    <div class="containerSelectionImages">
+      <div class="cardImage">
+        <img src="images/129.jpg" alt="">
+        <span>129</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/130.jpg" alt="">
+        <span>130</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/131.jpg" alt="">
+        <span>131</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/132.jpg" alt="">
+        <span>132</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/133.jpg" alt="">
+        <span>133</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/134.jpg" alt="">
+        <span>134</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/135.jpg" alt="">
+        <span>135</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/136.jpg" alt="">
+        <span>136</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/137.jpg" alt="">
+        <span>137</span>
+      </div>
+
+
+      <div class="cardImage">
+        <img src="images/138.jpg" alt="">
+        <span>138</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/139.jpg" alt="">
+        <span>139</span>
+      </div>
+
+
+      <div class="cardImage">
+        <img src="images/140.jpg" alt="">
+        <span>140</span>
+      </div>
+
+
+      <div class="cardImage">
+        <img src="images/141.jpg" alt="">
+        <span>141</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/142.jpg" alt="">
+        <span>142</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/143.jpg" alt="">
+        <span>143</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/144.jpg" alt="">
+        <span>144</span>
+      </div>
+
+      <div class="cardImage">
+        <img src="images/145.jpg" alt="">
+        <span>145</span>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <script src="js/jquery_3.7.0.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap_5.3.0.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+  <script src="https://firebase.google.com/docs/web/setup#available-libraries"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

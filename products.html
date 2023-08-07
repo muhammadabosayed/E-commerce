@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>navbar</title>
+  <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+  <!-- <nav class="navbar bg-dark navbar-dark"> -->
+    <!-- <div class="container">
+
+      <form class="d-flex w-50 m-auto" role="search">
+        <ul class="nav rounded-start-0 rounded-end-1" style="background-color: rgba(255, 255, 255, 0.882);">
+          <li class="nav-item dropdown  ">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              All
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="" id="computer">كمبيوترات</a></li>
+              <li><a class="dropdown-item" href="" id="laptop">لابتوبات</a></li>
+              <li><a class="dropdown-item" href="" id="screen">شاشات عرض</a></li>
+              <li><a class="dropdown-item" href="" id="phone">موبايلات</a></li>
+              <li><a class="dropdown-item" href="" id="devices">أجهزة كهربية</a></li>
+              <li><a class="dropdown-item" href="" id="dress">فساتين</a></li>
+              <li><a class="dropdown-item" href="" id="manDress">بدل عرسان</a></li>
+              <li><a class="dropdown-item" href="" id="cheldrenDress">ملابس اطفال</a></li>
+              <li><a class="dropdown-item" href="" id="homeTools">أثاث منزلى</a></li>
+              <li><a class="dropdown-item" href="" id="taplet">تابلت</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+        <input class="form-control rounded-end-0 rounded-start-0 " type="text" placeholder="Search" aria-label="Search"
+          dir="auto">
+        <button type="submit" class="btn btn-warning rounded-start-1 rounded-end-0"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+
+      <a class="navbar-brand"><img src="images/1.jpg" class="rounded-circle ms-3"
+          style="width: 45px; height: 45px;"></a>
+    </div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+      <!--  -->
+      
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse me-5" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active fs-5 me-2 ms-2" aria-current="page" href="navbar.html">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-5 me-2 ms-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              المنتجات
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="" id="computer">كمبيوترات</a></li>
+              <li><a class="dropdown-item" href="" id="laptop">لابتوبات</a></li>
+              <li><a class="dropdown-item" href="" id="screen">شاشات عرض</a></li>
+              <li><a class="dropdown-item" href="" id="phone">موبايلات</a></li>
+              <li><a class="dropdown-item" href="" id="devices">أجهزة كهربية</a></li>
+              <li><a class="dropdown-item" href="" id="dress">فساتين</a></li>
+              <li><a class="dropdown-item" href="" id="manDress">بدل عرسان</a></li>
+              <li><a class="dropdown-item" href="" id="cheldrenDress">ملابس اطفال</a></li>
+              <li><a class="dropdown-item" href="" id="homeTools">أثاث منزلى</a></li>
+              <li><a class="dropdown-item" href="" id="taplet">تابلت</a></li>
+            </ul>
+          </li>
+          
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="بحث" aria-label="Search">
+        </form>
+      </div>
+      <img src="images/logo black.png" class="navbar-brand me-5">
+    </div>
+  </nav>
+
+  <div class="row mt-5" style="width: 95%; margin: 25px auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>اسم المنتج</th>
+          <th>سعره</th>
+          <th>الصورة</th>
+          <th>إدارة المنتج</th>
+        </tr>
+      </thead>
+      <tbody>
+    
+      </tbody>
+    </table>
+
+  </div>
+
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+  <script src="js/jquery_3.7.0.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap_5.3.0.js"></script>
+
+  <!-- <script src="js/main.js"></script> -->
+
+  <script type="module">
+
+    let computer        = document.getElementById("computer")
+    let laptop          = document.getElementById("laptop")
+    let screen          = document.getElementById("screen")
+    let phone           = document.getElementById("phone")
+    let devices         = document.getElementById("devices")
+    let dress           = document.getElementById("dress")
+    let manDress        = document.getElementById("manDress")
+    let cheldrenDress   = document.getElementById("cheldrenDress")
+    let homeTools       = document.getElementById("homeTools")
+    let taplet          = document.getElementById("taplet")
+    // Import the functions you need from the SDKs you need
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBqb6gkzoTR48dYHXxHrDFzCWcPFsMtkhE",
+      authDomain: "e-commerce-b345a.firebaseapp.com",
+      projectId: "e-commerce-b345a",
+      storageBucket: "e-commerce-b345a.appspot.com",
+      messagingSenderId: "458578349453",
+      appId: "1:458578349453:web:a66a9738fbf1aa7bb081c4",
+      measurementId: "G-1GSBBYNZEG"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+    let row = document.querySelector(".row")
+    let tbody= document.querySelector("tbody")
+    let headerr=``;
+    computer.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "computer"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+    laptop.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "laptop"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+    screen.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "screen"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+    phone.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "phone"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+    devices.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "devices"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+    dress.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "dress"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+    manDress.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "manDress"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+    cheldrenDress.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "cheldrenDress"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+    homeTools.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "homeTools"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+    taplet.addEventListener("click", async (e) => {
+      e.preventDefault()
+      const querySnapshot = await getDocs(collection(db, "taplet"));
+      tbody.innerHTML = ""
+      querySnapshot.forEach((doc) => {
+
+        let card = `
+        <tr>
+          <td>${doc.data().name}</td>
+          <td>${doc.data().price}</td>
+          <td  class="image"><img src="images/${doc.data().number}.jpg" alt=""></td>
+          <td>
+            <button type="button" class="btn btn-sm DeleteProduct" style="min-width: 60px; font-weight:700 !important; background-color:#a00 !important;color:#fff !important">حذف</button>
+            </td>
+
+        </tr>
+                `
+            tbody.innerHTML += card
+      });
+    });
+
+
+
+
+
+
+
+
+    // *************************************//
+
+    
+  </script>
+</body>
+
+</html>

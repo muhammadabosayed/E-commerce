@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>navbar</title>
+  <link rel="stylesheet" href="css/navabar.css">
+</head>
+
+<body style="background-color: #e8e6e6 !important;">
+<!-- ---------------- -->
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+      <!--  -->
+       <span class="counter"
+        style="color: #fff; background-color: #a00; width: 25px; height: 25px; border-radius: 50%;text-align: center;font-weight: 700;position: absolute; top: 12px; right:25px; z-index: 99;">0</span>
+     
+      <i class="fas fa-regular fa-cart-shopping addToCart"
+        style="font-size: 30px; color: dark; cursor: pointer;position: relative;"></i>
+     
+      <!--  -->
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse me-5" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active fs-5 me-2 ms-2" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-5 me-2 ms-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              المنتجات
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="" id="computer">كمبيوترات</a></li>
+              <li><a class="dropdown-item" href="" id="laptop">لابتوبات</a></li>
+              <li><a class="dropdown-item" href="" id="screen">شاشات عرض</a></li>
+              <li><a class="dropdown-item" href="" id="phone">موبايلات</a></li>
+              <li><a class="dropdown-item" href="" id="devices">أجهزة كهربية</a></li>
+              <li><a class="dropdown-item" href="" id="dress">فساتين</a></li>
+              <li><a class="dropdown-item" href="" id="manDress">بدل عرسان</a></li>
+              <li><a class="dropdown-item" href="" id="cheldrenDress">ملابس اطفال</a></li>
+              <li><a class="dropdown-item" href="" id="homeTools">أثاث منزلى</a></li>
+              <li><a class="dropdown-item" href="" id="taplet">تابلت</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 me-2 ms-2 openpageAdmin" href="#">الادارة</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link fs-5 me-2 ms-2" href="#">تواصل معنا</a>
+          </li> -->
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="بحث" aria-label="Search">
+        </form>
+      </div>
+      <img src="images/logo black.png" class="navbar-brand me-5">
+    </div>
+  </nav>
+
+
+<!-- 
+  <nav class="navbar bg-dark navbar-dark fixed-top">
+    <div class="container p-1">
+      <i class="fas fa-regular fa-cart-shopping addToCart"
+        style="font-size: 30px; color: gold; cursor: pointer;position: relative;"></i>
+      <span class="counter"
+        style="color: #fff; background-color: #a00; width: 25px; height: 25px; border-radius: 50%;text-align: center;font-weight: 700;position: absolute; top: 12px; right:60px;">0</span>
+     
+        <form class="d-flex w-50 m-auto" role="search">
+        <ul class="nav rounded-start-0 rounded-end-1" style="background-color: rgba(255, 255, 255, 0.882);">
+          <li class="nav-item dropdown  ">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              All
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="" id="computer">كمبيوترات</a></li>
+              <li><a class="dropdown-item" href="" id="laptop">لابتوبات</a></li>
+              <li><a class="dropdown-item" href="" id="screen">شاشات عرض</a></li>
+              <li><a class="dropdown-item" href="" id="phone">موبايلات</a></li>
+              <li><a class="dropdown-item" href="" id="devices">أجهزة كهربية</a></li>
+              <li><a class="dropdown-item" href="" id="dress">فساتين</a></li>
+              <li><a class="dropdown-item" href="" id="manDress">بدل عرسان</a></li>
+              <li><a class="dropdown-item" href="" id="cheldrenDress">ملابس اطفال</a></li>
+              <li><a class="dropdown-item" href="" id="homeTools">أثاث منزلى</a></li>
+              <li><a class="dropdown-item" href="" id="taplet">تابلت</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+        <input class="form-control rounded-end-0 rounded-start-0 " type="text" placeholder="Search" aria-label="Search"
+          dir="auto">
+        <button type="submit" class="btn btn-warning rounded-start-1 rounded-end-0"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+
+      <a class="navbar-brand"><img src="images/logo white.png" style="width: 150px;"
+          ></a>
+    </div>
+  </nav> -->
+  <div class="successDone1 p-2">
+    <p class="text mb-4">تم إضافة المنتج فى السلة بنجاح </p>
+    <button class="done">موافق</button>
+  </div>
+  <div class="allBuyProduct">
+    <span class="closeCart">X</span>
+  
+
+
+    <div class="total">
+      <span class="textTotal">السعر الكلى : </span>
+      <span class="finalTotal">0</span>
+    </div>
+  </div>
+  <!-- ---------------- -->
+
+  <div class="successDone p-2">
+    <p class="text mb-4">من فضلك أدخل كلمة المرور بشكل صحيح</p>
+    <button class="done1">موافق</button>
+  </div>
+
+  <div class="AdminPassword">
+    <label for="passAdmin">من فضلك أدخل كلمة المرور</label>
+    <input type="password" id="passAdmin">
+    <br>
+    <button class="successpass">موافق</button>
+  </div>
+
+
+<!-- ---------------- -->
+  <!-------------------------------------->
+  <div id="carouselExampleSlidesOnly" class="carousel hamada slide" data-bs-ride="carousel" style="z-index: 0;">
+    <div class="carousel-inner text-white">
+      <div class="carousel-item active">
+        <img src="images/hero_3.jpg" class="d-block w-100" style="height: 90vh !important;" alt="...">
+        <div class="content ">
+          <h1>تخفيض %20</h1>
+          <h1 class="h">علي اي منتج</h1>
+          <p class="w-75">تسوق معنا وستجد جميع المنتجات الرائعة ذات الجودة الرائعة 
+      وستجد دائمًا عروضًا متميزة</p>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img src="images/hero_1.webp" class="d-block w-100" style="height: 90vh !important;" alt="...">
+        <div class="content ">
+          <h1>تخفيض %20</h1>
+          <h1 class="h">علي اي منتج</h1>
+          <p class="w-75">تسوق معنا وستجد جميع المنتجات الرائعة ذات الجودة الرائعة 
+وستجد دائمًا عروضًا متميزة</p>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img src="images/hero_2.jpg.webp" class="d-block w-100" style="height: 90vh !important;" alt="...">
+        <div class="content">
+          <h1>تخفيض %20</h1>
+          <h1 class="h">علي اي منتج</h1>
+          <p class="w-75">تسوق معنا وستجد جميع المنتجات الرائعة ذات الجودة الرائعة 
+      وستجد دائمًا عروضًا متميزة</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------------------------->
+  <div class="row" style="width: 95%; margin: 100px auto 25px">
+    <!---------------------------------------------------------------------------------->
+     <!-- <div id="slider" class="container-fluid row justify-content-evenly" style="margin-top:80px ;">
+        <div class="row justify-content-between mb-3">
+          
+            <div class="col-md-7">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide-7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide-5.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide-6.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide-3.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <i><h2 style="text-align: center; " class="mt-2"><span style="color: orangered;">Minyaawe </span> E-commerce</h2></i>
+            </div>
+
+            <div class="col-md-4">
+              <h3 dir="rtl" class="fs-2 mb-0">ذرونا علي مواقع التواصل </h3>
+              <div class="socialMedia_icons d-flex justify-content-center mt-3" dir="rtl">
+                 <a href="#"> <img src="images/icons/facebook-icon.png" alt=""></a>
+                 <a href="#"><img src="images/icons/instagram-icon.png" alt=""></a>
+                 <a href="#"><img src="images/icons/twitter-icon.png" alt=""></a>
+              </div>
+              <lottie-player src="https://lottie.host/a0ffcd0b-21dc-4e9b-bd95-b705921cd7bc/1Ytz3qhJaI.json" style="  width: 100% !important ; height: 350px" loop  autoplay direction="1" mode="normal" speed="1"></lottie-player>
+                
+              
+            </div>
+        </div>
+        
+    </div> -->
+
+ 
+
+
+    <!---------------------------------------------------------------------------------->
+    <h2 class="h3 text-center mb-4" style="color: #0481ff;">أجود أنواع المنتجات</h2>  
+    <div id="scrolbar"></div>
+       
+    <h2 class="h3 text-center mb-4 mt-5" style="color: #123;">أرقى أنواع الاجهزة الالكترونية </h2>  
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+        <div class="product">
+          <img src="images/14.jpg" class="card-img-top imgCard" alt="...">
+        
+          <div class="card-body">
+            <h5 class="card-title" style="color: #0481ff;">لاب توب</h5>
+            <a href="#" style="text-decoration: none; color: #a00;">
+              <p class="card-text p-2 discription">
+                لاب توب مناسب لجميع الخدمات والالعاب </p>
+            </a>
+        <span>سعر المنتج : </span> 
+        <span style="color: #a00; font-weight: 700;">3200</span>
+        بدلا من 
+        <del class="discount d-inline-block mb-2">4000</del>
+        <br>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+        
+          </div>
+          <div class="p-2">
+            <button type="button" class="btn btn-primary btn-sm" style="min-width: 60px;">شراء</button>
+            <button type="button" class="btn btn-danger btn-sm" style="min-width: 60px;">تفاصيل </button>
+          </div>
+        
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+        <div class="product">
+          <img src="images/8.jpg" class="card-img-top imgCard" alt="...">
+        
+          <div class="card-body">
+            <h5 class="card-title" style="color: #0481ff;">كمبيوتر</h5>
+            <a href="#" style="text-decoration: none; color: #a00;">
+              <p class="card-text p-2 discription">
+                ارخص كمبيوتر فى مصر مناسب لكل الاغراض </p>
+            </a>
+        <span>سعر المنتج : </span> 
+        <span style="color: #a00; font-weight: 700;">1500</span>
+        بدلا من 
+        <del class="discount d-inline-block mb-2">2700</del>
+        <br>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+        
+          </div>
+          <div class="p-2">
+            <button type="button" class="btn btn-primary btn-sm" style="min-width: 60px;">شراء</button>
+            <button type="button" class="btn btn-danger btn-sm" style="min-width: 60px;">تفاصيل </button>
+          </div>
+        
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+        <div class="product">
+          <img src="images/8.jpg" class="card-img-top imgCard" alt="...">
+        
+          <div class="card-body">
+            <h5 class="card-title" style="color: #0481ff;">كمبيوتر</h5>
+            <a href="#" style="text-decoration: none; color: #a00;">
+              <p class="card-text p-2 discription">
+                ارخص كمبيوتر فى مصر مناسب لكل الاغراض </p>
+            </a>
+        <span>سعر المنتج : </span> 
+        <span style="color: #a00; font-weight: 700;">1500</span>
+        بدلا من 
+        <del class="discount d-inline-block mb-2">2700</del>
+        <br>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+        
+          </div>
+          <div class="p-2">
+            <button type="button" class="btn btn-primary btn-sm" style="min-width: 60px;">شراء</button>
+            <button type="button" class="btn btn-danger btn-sm" style="min-width: 60px;">تفاصيل </button>
+          </div>
+        
+        </div>
+      </div>
+      </div>
+      </div>
+
+    <h2 class="h3 text-center mb-4 mt-5" style="color: #123;">شاهد المزيد من المنتجات الرائعة</h2>  
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-sm-6 col-12">
+          <div class="product h-100 mt-3 p-3">
+            <img src="images/44.jpg" class="card-img-top  d-none" alt="..." >
+    
+            <div class="card-body mt-2">
+              <h5 class="card-title" style="color: #0481ff;"> شاشة عرض</h5>
+              <a href="#" style="text-decoration: none; color: #a00;">
+                <p class="card-text p-2 discription">
+               ارقى انواع الشاشات المناسبة لجميع الفئات وبأرخص الاسعار وتتميز بجودة عالية 
+    </p>
+              </a>
+          <span>سعر المنتج : </span> 
+          <span style="color: #a00; font-weight: 700;">3200</span>
+          بدلا من 
+          <del class="discount d-inline-block mb-2">4000</del>
+          <br>
+              <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+              <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+              <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+              <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+              <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+          
+            </div>
+            <div class="p-2 mt-2">
+              <button type="button" class="btn btn-primary btn-sm" style="min-width: 60px;">شراء</button>
+              <button type="button" class="btn btn-danger btn-sm" style="min-width: 60px;">تفاصيل </button>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3 col-4 mt-5">
+                  <img src="images/41.jpg" alt="" width="100" name="screenPro1" class="img1">
+                </div>
+                <div class="col-md-3 col-4 mt-5">
+                  <img src="images/47.jpg" alt="" width="100" name="screenPro2" class="img2">
+                </div>
+                <div class="col-md-3 col-4 mt-5">
+                  <img src="images/43.jpg" alt="" width="100" name="screenPro3" class="img3">
+                </div>
+                <div class="col-md-3 col-4 mt-5">
+                  <img src="images/45.jpg" alt="" width="100" name="screenPro4" class="img4">
+                </div>
+                  <div class="col-md-3 col-4 mt-5">
+                  <img src="images/45.jpg" alt="" width="100" name="screenPro5" class="img5">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-12">
+          <div class="product h-100 mt-3">
+            <img src="images/44.jpg" class="card-img-top " alt="..." name="ScreenProduct" style="height: 350px !important">
+          
+    
+          </div>
+        </div>
+      
+
+      </div>
+      </div>
+
+
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-sm-6 col-12 ">
+            <div class="product p-3 h-100 mt-5 ">
+              <img src="images/61.jpg" class="card-img-top  d-none" alt="..." >
+      
+              <div class="card-body mt-2">
+                <h5 class="card-title" style="color: #0481ff;"> مطبخ متكامل</h5>
+                <a href="#" style="text-decoration: none; color: #a00;">
+                  <p class="card-text p-2 discription">
+                    جميع الاجهزة الكهربية وتجهيز العرائس وكل ما تتمناه تعالى واطلبه الان  </p>
+                </a>
+            <span>سعر المنتج : </span> 
+            <span style="color: #a00; font-weight: 700;">4500</span>
+            بدلا من 
+            <del class="discount d-inline-block mb-2">7400</del>
+            <br>
+                <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+                <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+                <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+                <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+                <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+            
+              </div>
+              <div class="p-2 mt-2">
+                <button type="button" class="btn btn-primary btn-sm" style="min-width: 60px;">شراء</button>
+                <button type="button" class="btn btn-danger btn-sm" style="min-width: 60px;">تفاصيل </button>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-3 col-4 mt-5">
+                    <img src="images/60.jpg" alt="" width="100" name="DevicePro1" class="imgDevice1">
+                  </div>
+                  <div class="col-md-3 col-4 mt-5">
+                    <img src="images/61.jpg" alt="" width="100" name="DevicePro2" class="imgDevice2">
+                  </div>
+                  <div class="col-md-3 col-4 mt-5">
+                    <img src="images/62.jpg" alt="" width="100" name="DevicePro3" class="imgDevice3">
+                  </div>
+                  <div class="col-md-3 col-4 mt-5">
+                    <img src="images/63.jpg" alt="" width="100" name="DevicePro4" class="imgDevice4">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12 ">
+            <div class="product h-100 mt-5">
+              <img src="images/61.jpg" class="card-img-top  " alt="..." name="DeviceProduct" style="height: 350px !important">
+            
+      
+            </div>
+          </div>
+        
+  
+        </div>
+        </div>
+  
+
+
+    
+  </div>
+
+      <!-- .........------------------------------..... -->
+      <div id="content" style="margin-top: 20px;">
+    
+        </div>
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+  <script src="js/jquery_3.7.0.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap_5.3.0.js"></script>
+  
+  <script src="js/app.js"></script>
+
+   <script type="module">
+// --------------------------
+ let openpageAdmin = document.querySelector(".openpageAdmin");
+    let passwordAdmin = "12345";
+
+    let successDone = document.querySelector(".successDone");
+    let done = document.querySelector(".done1");
+    let AdminPassword = document.querySelector(".AdminPassword");
+    let passAdmin = document.querySelector("#passAdmin");
+    let successpass = document.querySelector(".successpass");
+
+    openpageAdmin.addEventListener("click", (e) => {
+      e.preventDefault();
+      AdminPassword.style.transform = "scale(1)";
+    });
+
+    successpass.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      if (passAdmin.value == passwordAdmin) {
+        window.open("dashboard.html");
+        passAdmin.value = "";
+        AdminPassword.style.transform = "scale(0)";
+      } else {
+        AdminPassword.style.transform = "scale(0)";
+        successDone.style.transform = "scale(1)";
+      }
+    });
+
+    done.addEventListener("click", function (e) {
+      e.preventDefault();
+      passAdmin.value = "";
+      successDone.style.transform = "scale(0)";
+      // AdminPassword.style.transform = "scale(1)";
+    });
+  
+    window.addEventListener("load", function () {
+      const loader = document.querySelector("#loader-wrapper");
+      setTimeout(function () {
+        loader.classList.add("loaded");
+        setTimeout(function () {
+          loader.style.display = "none";
+        }, 1000); // 1 second
+      }, 3000); // 5 seconds
+    });
+// --------------------------
+    let computer      = document.getElementById("computer")
+    let laptop        = document.getElementById("laptop")
+    let screen        = document.getElementById("screen")
+    let phone         = document.getElementById("phone")
+    let devices       = document.getElementById("devices")
+    let dress         = document.getElementById("dress")
+    let manDress      = document.getElementById("manDress")
+    let cheldrenDress = document.getElementById("cheldrenDress")
+    let homeTools     = document.getElementById("homeTools")
+    let taplet        = document.getElementById("taplet")
+    let scrolbar      = document.getElementById("scrolbar")
+    let hamada=document.querySelector(".hamada");
+    let temp=true;
+    // Import the functions you need from the SDKs you need
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBqb6gkzoTR48dYHXxHrDFzCWcPFsMtkhE",
+      authDomain: "e-commerce-b345a.firebaseapp.com",
+      projectId: "e-commerce-b345a",
+      storageBucket: "e-commerce-b345a.appspot.com",
+      messagingSenderId: "458578349453",
+      appId: "1:458578349453:web:a66a9738fbf1aa7bb081c4",
+      measurementId: "G-1GSBBYNZEG"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+    let row = document.querySelector(".row")
+  function displayData(num,price,desc,name,descount){
+      
+      let card = `
+      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="margin-bottom: 15px;">
+
+<div class="card pb-2">
+
+  <img src="images/${num}.jpg" class="card-img-top imgCard" alt="...">
+  
+  <div class="card-body">
+    <h5 class="card-title" style="color: #0481ff;">${name}</h5>
+    <a href="#" style="text-decoration: none; color: #a00;">
+      <p class="card-text p-2 discription">${desc}</p>
+    </a>
+<span>سعر المنتج : </span> 
+<span style="color: #a00; font-weight: 700;">${price}</span>
+بدلا من 
+<del class="discount d-inline-block mb-2">${descount}</del>
+<br>
+    <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+    <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+    <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+    <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+    <i class="fa-solid fa-star" style="font-size: 25px; color: gold;"></i>
+
+  </div>
+  <div class="p-2">
+    <button type="button" class="btn btn-primary btn-sm" style="min-width: 60px;">شراء</button>
+    <button type="button" class="btn btn-danger btn-sm" style="min-width: 60px;">تفاصيل </button>
+  </div>
+
+</div>
+</div>`
+if(temp){
+scrolbar.style.cssText=`display:flex;`;
+scrolbar.innerHTML +=card;
+}
+else{
+row.innerHTML +=card;
+scrolbar.style.cssText=`display:none;`;
+scrolbar.innerHTML ='';
+}
+    }
+computer.addEventListener("click", async (e) => {
+      e.preventDefault()
+       temp=false;
+  const querySnapshot = await getDocs(collection(db, "computer"));
+  row.innerHTML =""
+   hamada.style.cssText=`display:none;`;
+  querySnapshot.forEach((doc) => {
+  displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+  });
+});
+
+laptop.addEventListener("click", async (e) => {
+  e.preventDefault()
+   temp=false;
+  const querySnapshot = await getDocs(collection(db, "laptop"));
+  row.innerHTML =""
+  hamada.style.cssText=`display:none;`;
+    querySnapshot.forEach((doc) => {
+    
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+});
+
+screen.addEventListener("click", async (e) => {
+  e.preventDefault()
+   temp=false;
+  const querySnapshot = await getDocs(collection(db, "screen"));
+  row.innerHTML =""
+   hamada.style.cssText=`display:none;`;
+  querySnapshot.forEach((doc) => {
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+});
+
+phone.addEventListener("click", async (e) => {
+  e.preventDefault()
+   temp=false;
+  const querySnapshot = await getDocs(collection(db, "phone"));
+  row.innerHTML =""
+   hamada.style.cssText=`display:none;`;
+  querySnapshot.forEach((doc) => {
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+});
+
+devices.addEventListener("click", async (e) => {
+  e.preventDefault()
+   temp=false;
+  const querySnapshot = await getDocs(collection(db, "devices"));
+  row.innerHTML =""
+   hamada.style.cssText=`display:none;`;
+  querySnapshot.forEach((doc) => {
+  
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+});
+
+dress.addEventListener("click", async (e) => {
+  e.preventDefault()
+   temp=false;
+  const querySnapshot = await getDocs(collection(db, "dress"));
+  row.innerHTML =""
+   hamada.style.cssText=`display:none;`;
+  querySnapshot.forEach((doc) => {
+    
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+});
+
+manDress.addEventListener("click", async (e) => {
+  e.preventDefault()
+   temp=false;
+  const querySnapshot = await getDocs(collection(db, "manDress"));
+  row.innerHTML =""
+   hamada.style.cssText=`display:none;`;
+  querySnapshot.forEach((doc) => {
+    
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+});
+
+cheldrenDress.addEventListener("click", async (e) => {
+  e.preventDefault()
+   temp=false;
+  const querySnapshot = await getDocs(collection(db, "cheldrenDress"));
+  row.innerHTML =""
+   hamada.style.cssText=`display:none;`;
+  querySnapshot.forEach((doc) => {
+    
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+});
+
+homeTools.addEventListener("click", async (e) => {
+  e.preventDefault()
+   temp=false;
+  const querySnapshot = await getDocs(collection(db, "homeTools"));
+  row.innerHTML =""
+   hamada.style.cssText=`display:none;`;
+  querySnapshot.forEach((doc) => {
+    
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+});
+
+taplet.addEventListener("click", async (e) => {
+  e.preventDefault()
+   temp=false;
+  const querySnapshot = await getDocs(collection(db, "taplet"));
+  row.innerHTML =""
+   hamada.style.cssText=`display:none;`;
+  querySnapshot.forEach((doc) => {
+    
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+});
+
+
+/**********************scrollbar*********************************/
+  
+window.onload=async()=>{
+  const querySnapshot = await getDocs(collection(db, "cheldrenDress"));
+  
+  querySnapshot.forEach((doc) => {
+    
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+
+  });
+  const querySnapshot1 = await getDocs(collection(db, "homeTools"));
+    
+  querySnapshot1.forEach((doc,index) => {
+    
+    displayData(doc.data().number,doc.data().price,doc.data().desc,doc.data().name,doc.data().descount)
+    
+  });
+
+  
+}
+
+
+</script> 
+
+<script src="js/zoomsl.min.js"></script>
+
+<script src="<script src=“https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js”></script></script>
+
+</body>
+
+</html>
